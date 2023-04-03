@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wall CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o -o HEU_EASY_OPENGL  /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libglfw.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so  -ldl

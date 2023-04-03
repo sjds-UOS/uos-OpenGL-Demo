@@ -1,4 +1,4 @@
-CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.o: \
+CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /home/xhd0728/BallTracing/balls/RayTracing.cpp \
  /usr/include/stdc-predef.h /home/xhd0728/BallTracing/balls/glad/glad.h \
  /home/xhd0728/BallTracing/balls/glad/KHR/khrplatform.h \

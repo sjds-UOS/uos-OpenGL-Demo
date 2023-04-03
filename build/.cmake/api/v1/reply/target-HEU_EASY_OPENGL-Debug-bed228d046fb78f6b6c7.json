@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Curriculumdesign2"
+			"path" : "HEU_EASY_OPENGL"
 		}
 	],
 	"backtrace" : 1,
@@ -79,7 +79,7 @@
 			]
 		}
 	],
-	"id" : "Curriculumdesign2::@6890427a1f51a3e7e1df",
+	"id" : "HEU_EASY_OPENGL::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -120,8 +120,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Curriculumdesign2",
-	"nameOnDisk" : "Curriculumdesign2",
+	"name" : "HEU_EASY_OPENGL",
+	"nameOnDisk" : "HEU_EASY_OPENGL",
 	"paths" : 
 	{
 		"build" : ".",

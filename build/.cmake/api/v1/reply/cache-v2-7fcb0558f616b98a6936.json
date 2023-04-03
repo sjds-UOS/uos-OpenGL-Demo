@@ -919,7 +919,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Curriculumdesign2"
+			"value" : "HEU_EASY_OPENGL"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1356,6 +1356,42 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libfontconfig.so"
+		},
+		{
+			"name" : "HEU_EASY_OPENGL_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/xhd0728/BallTracing/balls/build"
+		},
+		{
+			"name" : "HEU_EASY_OPENGL_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "HEU_EASY_OPENGL_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/xhd0728/BallTracing/balls"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",

@@ -147,7 +147,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Curriculumdesign2
+CMAKE_PROJECT_NAME:STATIC=HEU_EASY_OPENGL
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -237,6 +237,15 @@ Fontconfig_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
 Fontconfig_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
+
+//Value Computed by CMake
+HEU_EASY_OPENGL_BINARY_DIR:STATIC=/home/xhd0728/BallTracing/balls/build
+
+//Value Computed by CMake
+HEU_EASY_OPENGL_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+HEU_EASY_OPENGL_SOURCE_DIR:STATIC=/home/xhd0728/BallTracing/balls
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include

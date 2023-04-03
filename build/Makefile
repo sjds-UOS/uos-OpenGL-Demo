@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Curriculumdesign2
+# Target rules for targets named HEU_EASY_OPENGL
 
 # Build rule for target.
-Curriculumdesign2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Curriculumdesign2
-.PHONY : Curriculumdesign2
+HEU_EASY_OPENGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HEU_EASY_OPENGL
+.PHONY : HEU_EASY_OPENGL
 
 # fast build rule for target.
-Curriculumdesign2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/build
-.PHONY : Curriculumdesign2/fast
+HEU_EASY_OPENGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/build
+.PHONY : HEU_EASY_OPENGL/fast
 
 RayTracing.o: RayTracing.cpp.o
 .PHONY : RayTracing.o
 
 # target to build an object file
 RayTracing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o
 .PHONY : RayTracing.cpp.o
 
 RayTracing.i: RayTracing.cpp.i
@@ -142,7 +142,7 @@ RayTracing.i: RayTracing.cpp.i
 
 # target to preprocess a source file
 RayTracing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.i
 .PHONY : RayTracing.cpp.i
 
 RayTracing.s: RayTracing.cpp.s
@@ -150,7 +150,7 @@ RayTracing.s: RayTracing.cpp.s
 
 # target to generate assembly for a file
 RayTracing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.s
 .PHONY : RayTracing.cpp.s
 
 glad.o: glad.c.o
@@ -158,7 +158,7 @@ glad.o: glad.c.o
 
 # target to build an object file
 glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -166,7 +166,7 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -174,7 +174,7 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Curriculumdesign2.dir/build.make CMakeFiles/Curriculumdesign2.dir/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HEU_EASY_OPENGL.dir/build.make CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.s
 .PHONY : glad.c.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Curriculumdesign2"
+	@echo "... HEU_EASY_OPENGL"
 	@echo "... RayTracing.o"
 	@echo "... RayTracing.i"
 	@echo "... RayTracing.s"

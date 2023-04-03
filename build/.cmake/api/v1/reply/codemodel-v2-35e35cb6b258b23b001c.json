@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Curriculumdesign2",
+					"name" : "HEU_EASY_OPENGL",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Curriculumdesign2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Curriculumdesign2-Debug-bcceac719fcd80bd2d3f.json",
-					"name" : "Curriculumdesign2",
+					"id" : "HEU_EASY_OPENGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HEU_EASY_OPENGL-Debug-bed228d046fb78f6b6c7.json",
+					"name" : "HEU_EASY_OPENGL",
 					"projectIndex" : 0
 				}
 			]
