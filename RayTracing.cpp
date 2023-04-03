@@ -271,7 +271,9 @@ void render(const std::vector<orb *> &orbs, GLFWwindow *window)
             vertices.push_back(min(image[i * WIDTH + j].z, float(1)));
         }
     }
-    Shader OurShader("/home/xhd0728/BallTracing/balls/3.3.shader.vert", "/home/xhd0728/BallTracing/balls/3.3.shader.frag");
+    Shader OurShader(
+        "/home/xhd0728/BallTracing/balls/3.3.shader.vert",
+        "/home/xhd0728/BallTracing/balls/3.3.shader.frag");
     OurShader.use();
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
@@ -342,7 +344,9 @@ int main(int argc, char **argv)
     orbs.push_back(new orb(Vecf(-2, 2, -15), 1, Vecf(1.0, 1.0, 0.1), 0.5, 0.5));
     // 绿球
     orbs.push_back(new orb(Vecf(-4, 3, -18), 1, Vecf(0.1, 1.0, 0.1), 0.3, 0.7));
-    // orbs.push_back(new orb(Vecf(-8, 0, -25), 1, Vecf(0.36, 0.84, 1.0), 0.15, 0.95));
+    // 蓝球
+    orbs.push_back(new orb(Vecf(-8, 0, -25), 0.5, Vecf(0.36, 0.84, 1.0), 0.15, 0.95));
+    // 红球
     orbs.push_back(new orb(Vecf(-8.5, -1.5, -25), 1, Vecf(1.00, 0.1, 0.1), 0.15, 0.5));
 
     render(orbs, window);
