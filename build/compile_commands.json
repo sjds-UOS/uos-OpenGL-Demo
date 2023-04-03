@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/xhd0728/BallTracing/balls/build",
+  "command": "/usr/bin/g++   -g -Wall -std=gnu++17 -o CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.o -c /home/xhd0728/BallTracing/balls/RayTracing.cpp",
+  "file": "/home/xhd0728/BallTracing/balls/RayTracing.cpp",
+  "output": "CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.o"
+},
+{
+  "directory": "/home/xhd0728/BallTracing/balls/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/Curriculumdesign2.dir/glad.c.o -c /home/xhd0728/BallTracing/balls/glad.c",
+  "file": "/home/xhd0728/BallTracing/balls/glad.c",
+  "output": "CMakeFiles/Curriculumdesign2.dir/glad.c.o"
+}
+]
