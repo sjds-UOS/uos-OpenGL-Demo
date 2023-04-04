@@ -207,6 +207,13 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: /home/xhd0728/BallTracing/balls
   /usr/include/c++/8/tr1/poly_hermite.tcc \
   /usr/include/c++/8/tr1/poly_laguerre.tcc \
   /usr/include/c++/8/tr1/riemann_zeta.tcc \
+  /usr/include/c++/8/random \
+  /usr/include/c++/8/bits/random.h \
+  /usr/include/c++/8/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/8/bits/opt_random.h \
+  /usr/include/c++/8/bits/random.tcc \
+  /usr/include/c++/8/numeric \
+  /usr/include/c++/8/bits/stl_numeric.h \
   /usr/include/c++/8/fstream \
   /usr/include/c++/8/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/8/bits/basic_file.h \
@@ -217,7 +224,6 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: /home/xhd0728/BallTracing/balls
   /usr/include/c++/8/bits/algorithmfwd.h \
   /usr/include/c++/8/bits/stl_heap.h \
   /usr/include/c++/8/bits/stl_tempbuf.h \
-  /usr/include/c++/8/bits/uniform_int_dist.h \
   /usr/local/include/GLFW/glfw3.h \
   /home/xhd0728/BallTracing/balls/shader.h \
   /home/xhd0728/BallTracing/balls/glm/glm.hpp \
@@ -490,7 +496,11 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /home/xhd0728/BallTracing/balls/glm/detail/type_mat4x4.inl:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+/home/xhd0728/BallTracing/balls/glm/ext/matrix_double4x4.hpp:
+
+/home/xhd0728/BallTracing/balls/glm/mat4x4.hpp:
+
+/home/xhd0728/BallTracing/balls/glm/ext/matrix_float4x3_precision.hpp:
 
 /usr/include/c++/8/cwctype:
 
@@ -553,6 +563,10 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/8/cstdlib:
+
+/home/xhd0728/BallTracing/balls/glm/ext/matrix_float4x3.hpp:
+
+/usr/include/c++/8/fstream:
 
 /usr/include/c++/8/bits/functional_hash.h:
 
@@ -822,6 +836,8 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/x86_64-linux-gnu/c++/8/bits/opt_random.h:
+
 /usr/include/features.h:
 
 /usr/include/c++/8/bits/char_traits.h:
@@ -837,6 +853,8 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 /usr/include/c++/8/initializer_list:
 
 /usr/include/c++/8/streambuf:
+
+/usr/include/c++/8/bits/random.tcc:
 
 /usr/include/wchar.h:
 
@@ -884,15 +902,13 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /home/xhd0728/BallTracing/balls/glm/ext/vector_bool2.hpp:
 
-/usr/include/c++/8/fstream:
-
-/home/xhd0728/BallTracing/balls/glm/ext/matrix_float4x3.hpp:
-
 /usr/include/c++/8/tr1/poly_hermite.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/c++/8/bits/istream.tcc:
+
+/usr/include/c++/8/numeric:
 
 /usr/include/c++/8/bits/stl_iterator.h:
 
@@ -964,8 +980,6 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /home/xhd0728/BallTracing/balls/shader.h:
 
-/home/xhd0728/BallTracing/balls/glm/mat4x4.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -993,6 +1007,18 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 /usr/include/c++/8/tr1/riemann_zeta.tcc:
 
 /home/xhd0728/BallTracing/balls/glm/detail/type_mat2x2.hpp:
+
+/home/xhd0728/BallTracing/balls/glm/ext/matrix_double2x2.hpp:
+
+/usr/include/c++/8/clocale:
+
+/usr/include/c++/8/ext/string_conversions.h:
+
+/home/xhd0728/BallTracing/balls/glm/ext/vector_uint4.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/c++/8/bits/stl_numeric.h:
 
 /usr/include/c++/8/bits/stl_construct.h:
 
@@ -1049,6 +1075,8 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 /home/xhd0728/BallTracing/balls/glm/ext/vector_bool2_precision.hpp:
 
 /usr/include/c++/8/cwchar:
+
+/usr/include/c++/8/bits/random.h:
 
 /home/xhd0728/BallTracing/balls/glm/ext/vector_float2.hpp:
 
@@ -1120,14 +1148,6 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /home/xhd0728/BallTracing/balls/glm/ext/vector_int4_precision.hpp:
 
-/home/xhd0728/BallTracing/balls/glm/ext/matrix_double2x2.hpp:
-
-/usr/include/c++/8/clocale:
-
-/usr/include/c++/8/ext/string_conversions.h:
-
-/home/xhd0728/BallTracing/balls/glm/ext/vector_uint4.hpp:
-
 /home/xhd0728/BallTracing/balls/glm/ext/matrix_float2x3.hpp:
 
 /home/xhd0728/BallTracing/balls/glm/detail/type_mat2x4.inl:
@@ -1170,12 +1190,10 @@ CMakeFiles/HEU_EASY_OPENGL.dir/glad.c.o: /home/xhd0728/BallTracing/balls/glad.c 
 
 /usr/include/c++/8/bits/stl_vector.h:
 
+/usr/include/c++/8/random:
+
 /home/xhd0728/BallTracing/balls/glm/ext/matrix_float4x2.hpp:
 
 /home/xhd0728/BallTracing/balls/glm/detail/type_mat4x3.hpp:
 
 /home/xhd0728/BallTracing/balls/glm/detail/type_mat4x3.inl:
-
-/home/xhd0728/BallTracing/balls/glm/ext/matrix_float4x3_precision.hpp:
-
-/home/xhd0728/BallTracing/balls/glm/ext/matrix_double4x4.hpp:

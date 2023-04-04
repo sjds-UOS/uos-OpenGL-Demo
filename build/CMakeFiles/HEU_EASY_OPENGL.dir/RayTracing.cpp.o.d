@@ -161,7 +161,12 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /usr/include/c++/8/tr1/modified_bessel_func.tcc \
  /usr/include/c++/8/tr1/poly_hermite.tcc \
  /usr/include/c++/8/tr1/poly_laguerre.tcc \
- /usr/include/c++/8/tr1/riemann_zeta.tcc /usr/include/c++/8/fstream \
+ /usr/include/c++/8/tr1/riemann_zeta.tcc /usr/include/c++/8/random \
+ /usr/include/c++/8/bits/random.h \
+ /usr/include/c++/8/bits/uniform_int_dist.h \
+ /usr/include/x86_64-linux-gnu/c++/8/bits/opt_random.h \
+ /usr/include/c++/8/bits/random.tcc /usr/include/c++/8/numeric \
+ /usr/include/c++/8/bits/stl_numeric.h /usr/include/c++/8/fstream \
  /usr/include/c++/8/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++io.h \
@@ -169,7 +174,6 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /usr/include/c++/8/bits/stl_algo.h \
  /usr/include/c++/8/bits/algorithmfwd.h \
  /usr/include/c++/8/bits/stl_heap.h /usr/include/c++/8/bits/stl_tempbuf.h \
- /usr/include/c++/8/bits/uniform_int_dist.h \
  /usr/local/include/GLFW/glfw3.h /home/xhd0728/BallTracing/balls/shader.h \
  /home/xhd0728/BallTracing/balls/glm/glm.hpp \
  /home/xhd0728/BallTracing/balls/glm/detail/_fixes.hpp \

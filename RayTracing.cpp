@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
+#include <random>
 #include <fstream>
 #include <algorithm>
 #include <GLFW/glfw3.h>
@@ -30,11 +31,11 @@ float mix(const float &a, const float &b, const float &mix)
  * 如果光线与一个物体相交，计算交点，在交点处的法线，并对该点进行着色。
  * 着色取决于曲面特性（是否透明、反射、漫反射）
  * 光线不交于物体的话返回背景色
- * @param rayorig: 光线原点
- * @param raydir: 光线方向的单位向量
- * @param orbs: 球体集合
- * @param depth: 递归深度
- * @return: 颜色向量
+ * @param rayorig 光线原点
+ * @param raydir 光线方向的单位向量
+ * @param orbs 球体集合
+ * @param depth 递归深度
+ * @return 颜色向量
  */
 Vecf trace(
     const Vecf &rayorig,
@@ -223,6 +224,7 @@ void render(const std::vector<orb *> &orbs, GLFWwindow *window)
 }
 
 void key_call_back(GLFWwindow *window, int key, int scancode, int action, int mode);
+double random_balls(double L, double R);
 void show_balls(GLFWwindow *window);
 
 int main(int argc, char **argv)
@@ -233,15 +235,15 @@ int main(int argc, char **argv)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // OpenGL模式 OpenGL核心模式
 
     GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGHT, "HEU_EASY_OPENGL", nullptr, nullptr); // 窗口宽、高、标题
-    if (window == nullptr)
+    if (window == nullptr)                                                                     // 窗口创建失败
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(window); // 令该程序所有绘画操作在“window”上
     glfwSetKeyCallback(window, key_call_back);
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    // glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); // 隐藏光标
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
@@ -255,11 +257,11 @@ int main(int argc, char **argv)
 /**
  * 回调函数，
  * 检测并响应键盘事件
- * @param window: GLFW窗口
- * @param key: 键盘按键输入
- * @param scancode: 系统扫描码
- * @param action: 响应事件
- * @param mode: 键盘修饰符的状态
+ * @param window GLFW窗口
+ * @param key 键盘按键输入
+ * @param scancode 系统扫描码
+ * @param action 响应事件
+ * @param mode 键盘修饰符的状态
  */
 void key_call_back(GLFWwindow *window, int key, int scancode, int action, int mode)
 {
@@ -270,29 +272,67 @@ void key_call_back(GLFWwindow *window, int key, int scancode, int action, int mo
 /**
  * 空间内容展示
  * 展示若干个球体
- * @param window: GLFW窗口
+ * @param window GLFW窗口
  */
 void show_balls(GLFWwindow *window)
 {
     std::vector<orb *> orbs;
     // 底面的大球
     orbs.push_back(new orb(Vecf(0, -10004, -20), 10000, Vecf(1.0, 1.0, 1.0), 1.0, 0.0));
-    // 红球
-    orbs.push_back(new orb(Vecf(6, 0, -15), 1.5, Vecf(1.00, 0.1, 0.1), 0.2, 0.95));
-    // 蓝球
-    orbs.push_back(new orb(Vecf(7.5, 2.5, -25), 2, Vecf(0.1, 0.1, 1.0), 0.2, 0.7));
-    // 透明球
-    orbs.push_back(new orb(Vecf(1, -1, -18), 1, Vecf(1.0, 1.0, 1.0), 0.1, 1.0));
-    // 黑球
-    orbs.push_back(new orb(Vecf(2, 1, -25), 2, Vecf(1.0, 1.0, 1.0), 0.3, 0.0));
-    // 黄球
-    orbs.push_back(new orb(Vecf(-2, 2, -15), 1, Vecf(1.0, 1.0, 0.1), 0.5, 0.5));
-    // 绿球
-    orbs.push_back(new orb(Vecf(-4, 3, -18), 1, Vecf(0.1, 1.0, 0.1), 0.3, 0.7));
-    // 蓝球
-    orbs.push_back(new orb(Vecf(-8, 0, -25), 0.5, Vecf(0.36, 0.84, 1.0), 0.15, 0.95));
-    // 红球
-    orbs.push_back(new orb(Vecf(-8.5, -1.5, -25), 1, Vecf(1.00, 0.1, 0.1), 0.15, 0.5));
+    const int BALL_COUNT = 10;
+    // // 红球
+    // orbs.push_back(new orb(Vecf(6, 0, -15), 1.5, Vecf(1.00, 0.1, 0.1), 0.2, 0.95));
+    // // 蓝球
+    // orbs.push_back(new orb(Vecf(7.5, 2.5, -25), 2, Vecf(0.1, 0.1, 1.0), 0.2, 0.7));
+    // // 透明球
+    // orbs.push_back(new orb(Vecf(1, -1, -18), 1, Vecf(1.0, 1.0, 1.0), 0.1, 1.0));
+    // // 黑球
+    // orbs.push_back(new orb(Vecf(2, 1, -25), 2, Vecf(1.0, 1.0, 1.0), 0.3, 0.0));
+    // // 黄球
+    // orbs.push_back(new orb(Vecf(-2, 2, -15), 1, Vecf(1.0, 1.0, 0.1), 0.5, 0.5));
+    // // 绿球
+    // orbs.push_back(new orb(Vecf(-4, 3, -18), 1, Vecf(0.1, 1.0, 0.1), 0.3, 0.7));
+    // // 蓝球
+    // orbs.push_back(new orb(Vecf(-8, 0, -25), 0.5, Vecf(0.36, 0.84, 1.0), 0.15, 0.95));
+    // // 红球
+    // orbs.push_back(new orb(Vecf(-8.5, -1.5, -25), 1, Vecf(1.00, 0.1, 0.1), 0.15, 0.5));
+    std::ofstream out("/home/xhd0728/BallTracing/balls/test.txt");
+    if (!out.is_open())
+    {
+        cout << "cannot open file"
+             << "\n";
+    }
+    for (int i = 0; i < BALL_COUNT; ++i)
+    {
+        // 随机坐标
+        float x = random_balls(-8, 8);
+        float y = random_balls(-1, 1);
+        float z = random_balls(-25, -15);
+        // 随机半径
+        float r = random_balls(0, 1.5);
+        // 随机颜色
+        float R = random_balls(0.5, 1);
+        float G = random_balls(0.5, 1);
+        float B = random_balls(0.5, 1);
+        // 随机折射率和反射率
+        float u = random_balls(0.1, 0.5);
+        float v = random_balls(0.1, 1);
+
+        out << "(" << x << "," << y << "," << z << ")\t" << r << "\t";
+        out << "(" << R << "," << G << "," << B << ")\t";
+        out << u << "\t" << v << "\n";
+
+        orbs.push_back(new orb(Vecf(x, y, z), r, Vecf(R, G, B), u, v));
+    }
+    out.close();
 
     render(orbs, window);
+}
+
+double random_balls(double L, double R)
+{
+    random_device rd;                            // 随机设备
+    mt19937 gen(rd());                           // 随机数引擎
+    uniform_real_distribution<double> dis(L, R); // 均匀分布生成器
+    return dis(gen);
 }
