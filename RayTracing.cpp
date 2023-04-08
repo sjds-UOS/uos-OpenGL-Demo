@@ -9,7 +9,7 @@
 #include <fstream>
 #include <algorithm>
 
-#include "shader.h"
+// #include "shader.h"
 #include "vec.h"
 #include "orb.h"
 using namespace std;
@@ -273,11 +273,59 @@ void render(const std::vector<orb *> &orbs, GLFWwindow *window)
     }
 
     // 设置着色器
-    Shader OurShader(
-        "/home/xhd0728/BallTracing/balls/shader.vert", // 顶点着色器
-        "/home/xhd0728/BallTracing/balls/shader.frag"  // 片段着色器
-    );
-    OurShader.use();
+    // 顶点着色器硬编码
+    const char *vert = "#version 330 core\n"
+                       "layout (location = 0) in vec3 aPos;\n"
+                       "layout (location = 1) in vec3 aColor;\n"
+                       "out vec3 ourColor;\n"
+                       "void main()\n"
+                       "{\n"
+                       "gl_Position = vec4(aPos, 1.0);\n"
+                       "ourColor = aColor;\n"
+                       "}";
+
+    // 片段着色器硬编码
+    const char *frag = "#version 330 core\n"
+                       "out vec4 FragColor;\n"
+                       "in vec3 ourColor;\n"
+                       "void main()\n"
+                       "{\n"
+                       "FragColor = vec4(ourColor, 1.0f);\n"
+                       "}";
+
+    // 创建顶点着色器对象
+    unsigned int vertexShader;
+    vertexShader = glCreateShader(GL_VERTEX_SHADER);
+
+    // 创建片段着色器对象
+    unsigned int fragmentShader;
+    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+
+    // 将顶点着色器源码附加到顶点着色器对象上并编译
+    glShaderSource(vertexShader, 1, &vert, NULL);
+    glCompileShader(vertexShader);
+
+    // 将片段着色器源码附加到片段着色器对象上并编译
+    glShaderSource(fragmentShader, 1, &frag, NULL);
+    glCompileShader(fragmentShader);
+
+    // 创建 shader program 对象
+    unsigned int shaderProgram;
+    shaderProgram = glCreateProgram();
+
+    // 将顶点着色器和片段着色器附加到program对象上
+    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fragmentShader);
+
+    // 将二者链接
+    glLinkProgram(shaderProgram);
+
+    // 将 shader program 对象设置为当前使用的 shader 程序
+    glUseProgram(shaderProgram);
+
+    // 删除顶点和片段着色器对象
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
 
     // 创建一个 VAO（顶点数组对象）
     glGenVertexArrays(1, &VAO);

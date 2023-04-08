@@ -1,3 +1,0 @@
-/Users/bloodsvery/Desktop/学习/大二下/计算机图形学/Curriculumdesign2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/bloodsvery/Desktop/学习/大二下/计算机图形学/Curriculumdesign2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/bloodsvery/Desktop/学习/大二下/计算机图形学/Curriculumdesign2/cmake-build-debug/CMakeFiles/Curriculumdesign2.dir
