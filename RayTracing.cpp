@@ -9,7 +9,6 @@
 #include <fstream>
 #include <algorithm>
 
-// #include "shader.h"
 #include "vec.h"
 #include "orb.h"
 using namespace std;
