@@ -14,6 +14,8 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/local/include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
  /usr/include/c++/8/sstream /usr/include/c++/8/istream \
  /usr/include/c++/8/ios /usr/include/c++/8/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h \
@@ -23,7 +25,6 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /usr/include/c++/8/bits/postypes.h /usr/include/c++/8/cwchar \
  /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -174,7 +175,7 @@ CMakeFiles/HEU_EASY_OPENGL.dir/RayTracing.cpp.o: \
  /usr/include/c++/8/bits/stl_algo.h \
  /usr/include/c++/8/bits/algorithmfwd.h \
  /usr/include/c++/8/bits/stl_heap.h /usr/include/c++/8/bits/stl_tempbuf.h \
- /usr/local/include/GLFW/glfw3.h /home/xhd0728/BallTracing/balls/shader.h \
+ /home/xhd0728/BallTracing/balls/shader.h \
  /home/xhd0728/BallTracing/balls/glm/glm.hpp \
  /home/xhd0728/BallTracing/balls/glm/detail/_fixes.hpp \
  /home/xhd0728/BallTracing/balls/glm/detail/setup.hpp \
