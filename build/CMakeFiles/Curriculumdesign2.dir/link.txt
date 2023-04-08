@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -Wall CMakeFiles/Curriculumdesign2.dir/RayTracing.cpp.o CMakeFiles/Curriculumdesign2.dir/glad.c.o -o Curriculumdesign2  /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libglfw.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so  -ldl

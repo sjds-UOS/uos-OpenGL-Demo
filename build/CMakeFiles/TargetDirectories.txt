@@ -1,3 +1,0 @@
-/home/xhd0728/BallTracing/balls/build/CMakeFiles/HEU_EASY_OPENGL.dir
-/home/xhd0728/BallTracing/balls/build/CMakeFiles/edit_cache.dir
-/home/xhd0728/BallTracing/balls/build/CMakeFiles/rebuild_cache.dir
